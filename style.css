@@ -177,9 +177,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  width: 100%;
 }
 
 #adam,
@@ -195,6 +193,7 @@
   text-align: center;
   border-style: none;
   font-size: 80%;
+  box-shadow: 2px 3px #888888;
 }
 
 #adam img {
