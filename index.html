@@ -10,18 +10,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Barber's Lounge</title>
+
+    <title>The Barber's Lounge</title>
   </head>
 
   <body>
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down">
       <div id="navLogo">
-        <img class="menu-logo" src="images/logo.jpg" />
-        Barber's Lounge
+        <img class="menu-logo" src="images/barshop-logo.png">
+        The Barber's Lounge</img>
       </div>
 
-      <div class="nav-list">
-        <ul>
+        <div class="nav-list"> 
           <div>
             <a href="#aboutUs">
               <li>About Us</li>
@@ -29,7 +29,7 @@
           </div>
           <div>
             <a href="#barbers">
-              <li>Barbers</li>
+              <li>Our Barbers</li>
             </a>
           </div>
           <div>
@@ -37,44 +37,49 @@
               <li>Appointment</li>
             </a>
           </div>
-        </ul>
-      </div>
+        </div>
     </div>
-
-    <div class="slideshowBackground">
+    <!-- <div class="slideshowBackground">
       <div class="slideshow">
         <div id="left-button">
           <button><</button>
-        </div>
+        </div> -->
 
-        <div class="slideShowMain">
-          <img src="images/neonBarber.jpg" />
-        </div>
+    <!-- <div class="slideShowMain" data-aos="fade-right">
+      <img src="images/neonBarber.jpg" />
+    </div> -->
 
-        <div id="right-button">
+    <!-- <div id="right-button">
           <button>></button>
         </div>
       </div>
+    </div> -->
+
+<div class="main">
+
+    <div class="slideshow" data-aos="fade-down">
+      <div>
+        <img src="images/neonBarber.jpg" />
+      </div>
     </div>
-    <div class="hero">
+    <div class="hero" data-aos="fade-up">
       <div class="heroText">
-        <h1>The best Barbers in town</h1>
-        <h2>Just one click away</h2>
+        <h1>The Best Barbers In Town</h1>
+        <h2>Are just one click away</h2>
       </div>
       <div class="heroImage">
         <img src="images/chairs.jpg" />
       </div>
     </div>
 
-    <div class="title1Title">Welcome To The Shop</div>
-
-    <div class="title2" id="aboutUs">
+    <div class="title2" id="aboutUs" data-aos="fade-down">
       <div class="title2Text">
         <h1>The Barber's Lounge</h1>
-        <h2>Get the cut you need</h2>
+        <h2>Book an appointment to get the hairstyle you desire</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-          magnam laboriosam ad exercitationem, illum omnis.
+          If you are looking to get a haircut of a new hairstyle you've come to
+          the right place. We have barbers and hair stylists to help you find
+          your new look.
         </p>
       </div>
       <div class="title2Image">
@@ -82,13 +87,16 @@
       </div>
     </div>
 
-    <div class="ourTeam" id="barbers">Our Team of Experts</div>
+    <div class="ourTeam" id="barbers" data-aos="fade-up">
+      <h2>Our Team of Experts</h2>
+      <p>Speak to one of our three lead experts to discuss setting up an appointment. If you would like to schedule a tour of our facility schedule a tour in the section below.</p>
+    </div>
 
     <div class="threeCards">
-      <div id="adam">
+      <div id="adam" data-aos="flip-left">
         <h1>Adam</h1>
         <img src="images/adam.jpg" />
-        <p>Hair Care Specialist</p>
+        <h1>Hair Care Specialist</h1>
         <br />
         <button id="adamButton">Lets Talk Hair Care</button>
         <form id="myDIV">
@@ -102,10 +110,10 @@
         </form>
       </div>
 
-      <div id="daniel">
+      <div id="daniel" data-aos="flip-left">
         <h1>Daniel</h1>
         <img src="images/daniel.jpg" />
-        <p>Lead Stylist</p>
+        <h1>Lead Stylist</h1>
         <br />
         <button id="danielButton" onclick="myFunction1()">
           Lets Talk Style
@@ -121,10 +129,10 @@
         </form>
       </div>
 
-      <div id="abraham">
+      <div id="abraham" data-aos="flip-left">
         <h1>Abraham</h1>
         <img src="images/abraham.jpg" />
-        <p>Beard Grooming Specialist</p>
+        <h1>Beard Grooming Specialist</h1>
         <br />
         <button id="abrahamButton" onclick="myFunction2()">
           Lets Talk Beards
@@ -142,10 +150,10 @@
     </div>
 
     <div class="dropdown" id="appointment">
-      <div class="callToAction">
+      <div class="callToAction" data-aos="zoom-in">
         <img src="images/callToAction.jpg" />
         <div class="callToActionText">
-          <h1>Barber's Lounge</h1>
+          <h1>The Barber's Lounge</h1>
           <button onclick="myFunction()" class="dropbtn">
             Book Appointment
           </button>
@@ -157,8 +165,12 @@
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
   <footer class="footerSections">
@@ -181,4 +193,5 @@
       <p>Apparel Store</p>
     </div>
   </footer>
+</div>
 </html>
